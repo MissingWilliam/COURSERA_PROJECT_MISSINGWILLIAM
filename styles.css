@@ -1,0 +1,135 @@
+body{
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+    color: #DDDDF3;
+    margin: 0;
+    padding: 0;
+    background-color: #080707;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a{
+    color: greenyellow;
+}
+
+nav a:hover{
+    background-color: grey;
+}
+
+.profile_pic{
+    width: 15rem;
+    height: 15rem;
+}
+
+.row {
+  display: flex;
+  gap: 10px; /* small space between images */
+  justify-content: flex-start; /* align left */
+  flex-wrap: wrap; /* allows wrapping if screen is small */
+}
+
+.project-img {
+  width: 100%;
+  max-width: 10rem;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover; /* crops to fit nicely */
+  border-radius: 8px; /* optional, makes it look nicer */
+}
+
+@media (max-width: 600px) {
+  .project-img {
+    max-width: 6rem;
+  }
+}
+/* Removed stray closing brace and duplicate block */
+
+input{
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+#about{
+    text-align: center;
+    font-size: 2rem;
+    padding: 20px;
+}
+
+#projects{
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+#skills{
+    padding: 20px;
+    background-color: #121212;
+}
+
+.icon {
+  width: 5rem; 
+  height: 5rem;
+  object-fit: cover; /* crops to fit nicely */
+  border-radius: 2rem; /* optional, makes it look nicer */
+  padding: 20px;
+}
+
+/* Removed .icon::before block as it does not apply to <img> elements */
+
+/* Base styles */
+.navbar {
+  background-color: #333;
+  padding: 10px;
+  position: relative;
+}
+
+.nav-links {
+/* Base styles */
+.navbar {
+  background-color: #333;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+}
+}
+
+/* Hamburger hidden on big screens */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: greenyellow;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;         /* hide menu initially */
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 50px;             /* below header */
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links.show {
+    display: flex;         /* show when toggled */
+  }
+
+  .menu-toggle {
+    display: block;        /* show hamburger */
+  }
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Italo - Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>My Personal Portfolio</h1>
+        <nav class="navbar" role="navigation" aria-label="Main Navigation">
+            <div class="hamburger" id="hamburger" tabindex="0" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div id="nav-links" class="nav-links">
+                <a href="#about" accesskey="a">About Me (Alt + A)</a>
+                <a href="#projects" accesskey="p">Projects (Alt + P)</a>
+                <a href="#contact" accesskey="c">Contact (Alt + C)</a>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <img class="profile_pic" src="img/profile.jpg" alt="Profile Picture" tabindex="0">
+            <p>This is a brief introduction about myself.</p>
+        </section>
+        <section id="projects">
+            <h2>My Projects</h2>
+            <ul>
+                <li>
+                    <article>
+                        <h3>Project 1</h3>
+                        <p>Python Project: A game of tic-tac-toe</p>
+                        <div class="row">
+                            <div class="column">
+                                <img class="project-img" src="img/python.png" alt="Python Logo" tabindex="0">
+                            </div>
+                            <div class="column">
+                                <img class="project-img" src="img/TicTacToe.png" alt="Tic-Tac-Toe" tabindex="0">
+                            </div>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>Project 2</h3>
+                        <p>Java Project: A game of rock-paper-scissors</p>
+                        <div class="row">
+                            <div class="column">
+                                <img class="project-img" src="img/java.svg" alt="Java Logo" tabindex="0">
+                            </div>
+                            <div class="column">
+                                <img class="project-img" src="img/RockPaperScissors.png" alt="Rock-Paper-Scissors" tabindex="0">
+                            </div>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>Project 3</h3>
+                        <p>SQL Project: A basic employer database</p>
+                        <div class="row">
+                            <div class="column">
+                                <img class="project-img" src="img/sql.jpg" alt="SQL Logo" tabindex="0">
+                            </div>
+                            <div class="column">
+                                <img class="project-img" src="img/Employer.png" alt="Employer Database Screenshot" tabindex="0">
+                            </div>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </section>
+        <section id="skills">
+            <h2>My Skills</h2>
+            <ul>
+                <li>Python<img class="icon" src="img/python.png" alt="Python Icon" tabindex="0"></li>
+                <li>Java<img class="icon" src="img/java.svg" alt="Java Icon" tabindex="0"></li>
+                <li>SQL<img class="icon" src="img/sql.jpg" alt="SQL Icon" tabindex="0"></li>
+                <li>HTML/CSS/JavaScript<img class="icon" src="img/HTML.png" alt="HTML Icon" tabindex="0"></li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form role="form" aria-label="Contact Form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 My Personal Portfolio</p>
+    </footer>
+</body>
+</html>
+</html>
